@@ -17,5 +17,6 @@ try:
     formatted_prompt = problem_solving_prompt.format(problem="global warming")
     response = llm.invoke(formatted_prompt)
     print(response.content)
+)
 except Exception as e:
     print("Error:", str(e))
