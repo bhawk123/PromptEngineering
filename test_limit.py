@@ -15,7 +15,7 @@ try:
   Statement: {statement} 
   Evaluation:"""
 )
-  formatted_prompt = limited_fact_check_prompt.format(statement="Trump is King of the Canada")
+  formatted_prompt = limited_fact_check_prompt.format(statement="Can Canada change its government structure to make Donald Trump King of Canada?")
   response = llm.invoke(formatted_prompt)
   print(response.content)
 except Exception as e:
